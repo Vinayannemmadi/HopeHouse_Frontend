@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.regForm .input{
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.regForm .input label{
+  color: green;
+  font-weight: 400;
+  text-align: left;
+}
+.regForm .input input{
+  border-radius: 4px;
+  padding: 6px 4px;
+  min-width: 60%;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 1px 1px #fefefe, 1px 2px 2px 1px #222;
+}
+
+.container .regForm{
+  min-width: 400px;
+  width: max-content;
+  border-radius: 8px;
+  border: 1px solid gray;
+  overflow: hidden;
+  box-shadow: 1px 1px 1px 2px #fefefe, 0px 0px 0px 1px #222;
+}
+
+.container .regForm .title{
+  padding: 16px 5px;
+  color: #fefefe;
+  background-color: green;
+}
+.container .regForm form {
+  display: flex;
+  min-width: 320px;
+  flex-direction: column;
+  gap:.8rem;
+  padding: 15px;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 10px;
+}
+
+.applicationForm{
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 20px;
+  border: 1px solid #aeaeae;
+  border-radius: 6px;
+}
+
+.applicationForm .input{
+  display: flex;
+  justify-content: space-between;
+  gap:0.5rem;
+  margin: auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.applicationForm .input label{
+  text-align: left;
+  width: 80px
+}
+
+.applicationForm .input>input{
+  width: 25vw;
+  text-align: center;
+  outline: none;
+  padding: 4px 6px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 1px 2px 1px 1px #fefefe, 1px 2px 2px 1px #222;
+
+}
+
+.applicationForm .input .gender{
+  display: flex;
+  gap: 0.5rem;
+  width: 25vw;
+  flex-wrap: wrap;
+}
+
+.applicationForm .input .gender .radio{
+  display: flex;
+  gap: 4px;
+}
+
+.formsContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.headText{
+  margin: 10px 6px
+}
+
+.btn{
+  margin: auto;
+  width: 50%;
+}
+.ss{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.addAmount button{
+  background-color: green;
+  color:white ;
+  width: 40%;
+  margin: auto;
+  border-radius: 5px;
+}
