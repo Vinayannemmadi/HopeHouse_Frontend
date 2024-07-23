@@ -19,10 +19,10 @@ import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 // import { login } from "../store/AuthReducer/actions";
+// import { signInWithPopup } from "firebase/auth";
 import axios from "axios";
 import Cookies from 'universal-cookie';
 import {auth,provider} from '../config';
-import { signInWithPopup } from "firebase/auth";
 import image from '../public/hopehouse.png';
 const Login = () => {
   const toast = useToast();
@@ -34,13 +34,13 @@ const Login = () => {
   const cookies=new Cookies();
   const token=cookies.get('jwtToken');
   const [error,setError]=useState("")
-  const googleHandler = () => {
-    signInWithPopup(auth,provider).then((d)=>{
-      setData({password:d.user.password,email:d.user.email});
-      localStorage.setItem("email",data.user.email)
-    })
-      console.log(data);
-  };
+  // const googleHandler = () => {
+  //   signInWithPopup(auth,provider).then((d)=>{
+  //     setData({password:d.user.password,email:d.user.email});
+  //     localStorage.setItem("email",data.user.email)
+  //   })
+  //     console.log(data);
+  // };
 
   const formsubmit = async (e) => {
     e.preventDefault();
@@ -141,9 +141,9 @@ const Login = () => {
                 Quickly login using
               </h1>
 
-              <Button onClick={()=>googleHandler()} leftIcon={<FcGoogle />}>
+              {/* <Button onClick={()=>googleHandler()} leftIcon={<FcGoogle />}>
                 Google
-              </Button>
+              </Button> */}
             </Box>
 
             <form onSubmit={formsubmit}>
